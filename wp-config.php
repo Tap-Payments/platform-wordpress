@@ -132,6 +132,10 @@ define('FS_METHOD', 'direct');
 define('FS_CHMOD_DIR',0755);
 define('FS_CHMOD_FILE',0644);
 
+
+define('WP_SITEURL', 'https://platform.tap.company/woocommerce');
+define('WP_HOME', 'https://platform.tap.company/woocommerce');
+
 define( 'UPLOADS', 'wp-content/uploads' );
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
