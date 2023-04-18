@@ -128,6 +128,9 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
+define('FS_METHOD', 'direct');
+define('FS_CHMOD_DIR',0755);
+define('FS_CHMOD_FILE',0644);
 
 define( 'UPLOADS', 'wp-content/uploads' );
 /** Sets up WordPress vars and included files. */
