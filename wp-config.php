@@ -122,6 +122,13 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 	eval($configExtra);
 }
 
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', false );
+define( 'DOMAIN_CURRENT_SITE', 'platform.tap.company/woocomerce' );
+define( 'PATH_CURRENT_SITE', '/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
