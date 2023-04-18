@@ -75,14 +75,14 @@ define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         'bf4c51c0df150efa2c16b361b0802650312132da') );
-define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '7725fe54331a294fbe6e40b63ebb1d1a4a86f95d') );
-define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '24c5418671afb91384dca1a623d12a2d810ac9a2') );
-define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '4796279e699820e3bef8b3a62dc2f10b008124e2') );
-define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '92db759deee0b8f753f73cab6dc4b4daee7cba93') );
-define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '170f0b495a0a555a97e023ec933bd2ab65434bfd') );
-define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   'cb390075d0dd478ea911f32d345fd9bd87b2cb93') );
-define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       'd9a9fecba80c3e36baa7783eab13c0c538562af6') );
+define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '7a46064545bf99021bbf2fd5e641e884e8afee08') );
+define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  'a79186a6220cdfb1d541c62af8a6398a0c67d9b8') );
+define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '7f26820a17e5cdcdc96d556b757ff011282abb60') );
+define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '586cd177f30fa9d5d493ab119020de73d183a34a') );
+define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '2975038d90f00c49aa1cac968428062a1f8dddfd') );
+define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', 'e320c11fd2af1538d65de7fdcc4b5eccb3fa44c6') );
+define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '070234b7c4da2857b63e1d7f11d540a24521c488') );
+define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '98b1ed85c8bf2b42d5b3596d6b0787b9bda15af8') );
 // (See also https://wordpress.stackexchange.com/a/152905/199287)
 
 /**#@-*/
@@ -128,14 +128,6 @@ if ($configExtra = getenv_docker('WORDPRESS_CONFIG_EXTRA', '')) {
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
-define('FS_METHOD', 'direct');
-define('FS_CHMOD_DIR',0755);
-define('FS_CHMOD_FILE',0644);
 
-
-// define('WP_SITEURL', 'https://platform.tap.company/woocommerce');
-// define('WP_HOME', 'https://platform.tap.company/woocommerce');
-
-define( 'UPLOADS', 'wp-content/uploads' );
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
